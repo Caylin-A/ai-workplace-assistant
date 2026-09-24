@@ -1,11 +1,22 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, FileText, CalendarCheck, Menu, Sparkles, X } from "lucide-react";
+import {
+  CalendarCheck,
+  FileText,
+  LayoutDashboard,
+  Mail,
+  Menu,
+  Settings,
+  Sparkles,
+  X,
+} from "lucide-react";
 import { useState, type ReactNode } from "react";
 
 const nav = [
-  { to: "/", label: "Email Generator", icon: Mail },
-  { to: "/summariser", label: "Notes Summariser", icon: FileText },
+  { to: "/", label: "Dashboard", icon: LayoutDashboard },
+  { to: "/email-generator", label: "Email Generator", icon: Mail },
+  { to: "/summariser", label: "Meeting Notes Summariser", icon: FileText },
   { to: "/planner", label: "Task Planner", icon: CalendarCheck },
+  { to: "/settings", label: "Settings", icon: Settings },
 ] as const;
 
 function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
