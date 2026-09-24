@@ -56,7 +56,7 @@ function DashboardPage() {
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {tools.map(({ to, icon: Icon, title, description }) => (
-          <Link key={to} to={to} className="group">
+          <Link key={to} to={to} className="group block h-full">
             <Card className="h-full shadow-none transition-colors group-hover:bg-pink-soft/60">
               <CardHeader className="pb-3">
                 <span className="mb-3 flex size-10 items-center justify-center rounded-xl bg-pink text-primary">
