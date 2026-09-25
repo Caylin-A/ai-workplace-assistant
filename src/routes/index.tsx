@@ -64,7 +64,7 @@ function DashboardPage() {
                 </span>
                 <CardTitle className="text-base">{title}</CardTitle>
               </CardHeader>
-              <CardContent className="flex h-full flex-col justify-between gap-4">
+              <CardContent className="flex flex-1 flex-col justify-between gap-4">
                 <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
                 <span className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground">
                   Open tool
